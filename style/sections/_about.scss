@@ -1,0 +1,46 @@
+.about {
+    width: calc(100% - 66px);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 128px;
+}
+.about__pictures {
+    width: 46.90909%;
+    position: relative;
+    top: 0;
+    left: 0;
+    &__rectangle_green {
+        width: 86.4341%;
+        position: absolute;
+    }
+    &__rectangle_tree {
+        width: 86.4341%;
+        position: absolute;
+        top: 40px;
+        left: 70px;
+    }
+}
+.about__info {
+    width: 45.8181%;
+    margin-left: 80px;
+}
+.about__info__span {
+    @include link;
+    color: $colorGreen;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    padding-bottom: 12px;
+}
+.about__info__title {
+    @include h3;
+    padding-bottom: 24px;
+}
+.about__info__text {
+    @include text;
+}
+.about__info__text_small {
+    font-weight: 500;
+    padding: 16px 0 36px;
+}

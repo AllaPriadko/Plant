@@ -1,0 +1,39 @@
+.footer, .footer__nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+.footer {
+    margin-bottom: 96px;
+}
+.footer__nav {
+    width: 54.2534%;
+}
+.header__logo_heigth, .nav-block__title {
+    display: block;
+    line-height: 31px;
+    margin-bottom: 24px;
+}
+.footer__info {
+    width: 26.5625%;
+}
+.footer__info__text {
+    width: 100%;
+    @include text;
+    padding-bottom: 22px;
+}
+
+.footer__info__link {
+    margin-right: 14px;
+}
+.footer__info__img {
+    width: 15.6862%;
+}
+.nav-block__list__item {
+    list-style-type: none;
+    padding-bottom: 16px;
+}
+.nav-block__list__link {
+    @include link;
+}

@@ -1,0 +1,54 @@
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 51px;
+}
+
+.header__logo {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: $mainColorText;
+    
+}
+.header__nav{
+    width: 40.0173%;
+    transition: all 0.3s linear;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+.header__nav__item {
+    @include link;
+}
+.header__nav__item:hover {
+    color: $colorGreen;
+    border-bottom: 2px solid $colorGreen;
+}
+.header__button {
+    width: 14.9305%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.header__button__login, .header__button__sign-up {
+    @include link;
+}
+.header__button__login {
+    background-color: #FFFFFF;
+}
+
+.header__button__sign-up {
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    padding: 12px 16px;
+    background: $colorGreen;
+    border-radius: 4px;
+}
