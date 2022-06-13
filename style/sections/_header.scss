@@ -1,10 +1,18 @@
 
 .header {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    @media screen and (min-width: 1280px) {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-top: 51px;
+    }
 }
 
 .header__logo {
@@ -15,13 +23,24 @@
     color: $mainColorText;
     
 }
-.header__nav{
-    width: 40.0173%;
-    transition: all 0.3s linear;
+.header__nav {
+    width: 100%;
+    order: 1;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     text-align: center;
+    margin-top: 20px;
+    @media screen and (min-width: 768px) {
+        width: 60%;
+        
+        }
+    @media screen and (min-width: 1280px) {
+    width: 40.0173%;
+    transition: all 0.3s linear;
+    order: 0;
+    margin-top: 0;
+    }
 }
 .header__nav__item {
     @include link;
@@ -31,11 +50,19 @@
     border-bottom: 2px solid $colorGreen;
 }
 .header__button {
-    width: 14.9305%;
+    width: 50%;
+    margin-left: 90px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
+    @media screen and (min-width: 768px) {
+            width: 25%;
+    
+        }
+    @media screen and (min-width: 1280px) {
+    width: 14.9305%;
+    
+    }
 }
 .header__button__login, .header__button__sign-up {
     @include link;

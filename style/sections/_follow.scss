@@ -9,16 +9,23 @@
     line-height: 57px;
 }
 .about__info__text_follow-width {
+    width: 100%;
+    @media screen and (min-width: 1440px) {
     width: 47.2222%;
     text-align: center;
+    }
 }
 .follow__block {
     width: 100%;
     display: flex;
     flex-direction: row;
     margin-top: 40px;
-    margin-bottom: 128px;
     position: relative;
+    margin-bottom: 20px;
+    @media screen and (min-width: 1440px) {
+    margin-bottom: 128px;
+    
+    }
 }
 .follow__block__img {
     width: 20%;

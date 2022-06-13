@@ -3,10 +3,14 @@
     margin-bottom: 79px;
 }
 .subscribe__input {
-    width: 45.9734%;
+    width: 100%;
     padding: 19px 0 19px 20px;
-    border: 0;
-    border-radius: 4px;
+        border: 0;
+        border-radius: 4px;
+    @media screen and (min-width: 1280px) {
+    width: 45.9734%;
+    
+    }
 }
 
 .subscribe__input::placeholder {
@@ -16,33 +20,56 @@
     color: #5A5A5A;
 }
 .form {
-    width: 90.27777%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
     margin: 0 auto;
-    background: #DFFFE3;
-    border-radius: 6px;
+        background: #DFFFE3;
+        border-radius: 6px;
+        padding: 30px;
+        position: relative;
+    @media screen and (min-width: 1280px) {
+    width: 90.27777%;
     padding: 60px 0 60px 59px;
-    position: relative;
+    }
 }
 .about__info__title_padding {
+    
     padding-bottom: 12px;
 }
 .about__info__text_subscribe-width {
-    width: 47.8079%;
+    width: 100%;
     margin-bottom: 30px;
+    @media screen and (min-width: 1280px) {
+    width: 47.8079%;
+   
+    }
 }
 .header__button__sign-up {
+    padding: 8px 10px;
+    @media screen and (min-width: 1440px) {
     padding: 11px 16px;
-    
     top: 212px;
     left: 396px;
+    }
 }
 .header__button__sign-up_position {
+margin-top: 15px;
+align-self: center;
+    @media screen and (min-width: 1280px) {
 position: absolute;
+top:62%;
 left: 39%;
-
+    }
 }
 .subscribe__img {
-    position: absolute;
+   
+   display: none;
+    @media screen and (min-width: 1280px) {
+        display: block;
+        position: absolute;
     right: 2.31%;
     bottom: 0;
+    }
 }

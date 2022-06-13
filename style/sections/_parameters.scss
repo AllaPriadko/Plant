@@ -2,12 +2,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 body {
     font-family: 'Nunito', sans-serif;
     padding: 0 10%;
 }
-
 
 
 $mainColorText: #1A1A1A;
@@ -24,7 +24,7 @@ $font-family: 'DM sans', sans-serif;
     font-size: 16px;
     line-height: 21px;
     border: 0;
-    border-bottom: 2px solid #FFFFFF;
+    border-bottom: 2px solid transparent;
 }
 @mixin text {
     font-family: 'DM Sans';

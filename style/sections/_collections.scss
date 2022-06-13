@@ -1,11 +1,19 @@
 .collection {
     display: flex;
+    flex-direction: column;
+    margin: 50px 0 50px;
+    @media screen and (min-width: 1440px) {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 102px 0 128px;
+    margin: 102px 0 128px;
+    }
 }
 .collection__info {
+    width: 100%;
+    @media screen and (min-width: 1280px) {
     width: 33.7673%;
+    }
 }
 .collection__info__title {
     width: 100%;
@@ -34,10 +42,16 @@
     color: #827f7f;
 }
 .collection__pictures {
-    width: 60.8506%;
+    width: 100%;
+    margin-top: 20px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    @media screen and (min-width: 1440px) {
+    width: 60.8506%;
+   
+    }
 }
 .collection__pictures__plant {
     width: 31.24108%;
